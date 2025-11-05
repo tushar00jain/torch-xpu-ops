@@ -110,6 +110,7 @@ class TORCH_API ProcessGroupXCCL : public Backend {
     uint64_t seq_;
     bool isP2P_;
     std::optional<uint64_t> trace_id_;
+    std::optional<uint64_t> trace_reset_epoch_;
     size_t numelIn_ = -1;
     size_t numelOut_ = -1;
 
